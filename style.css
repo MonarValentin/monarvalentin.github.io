@@ -71,7 +71,7 @@ nav{
 
 
 /* mobile view,needs some more work done*/
-@media (max-width: 1024px){
+@media screen and (max-width:1024px){
 	.nav-links{
 		width: 60%;
 	}
@@ -79,7 +79,7 @@ nav{
 
 
 
-@media  screen and  (max-width: 768px){
+@media screen and (max-width:768px){
 	
 	 body{
 		overflow-x: hidden;
