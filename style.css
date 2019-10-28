@@ -1,0 +1,208 @@
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+/*nav bar properties*/
+
+nav{
+	display: flex;
+	
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: #00e6b8;
+	font-family: 'Poppins', sans-serif;
+
+}
+/* logo,might change it later on to a different name,for now it's just my name*/
+.logo{
+	color:black;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 22px;
+	
+}
+/* links(home,about,projects,contact)*/
+.nav-links{
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+	cursor: pointer;
+
+}
+.nav-links a:hover{
+
+	color : black;
+	font-size: 24px;
+ 	transition-duration: 0.7s;
+}
+
+.nav-links a{
+
+	color:black;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size:20px;
+}
+.nav-links li{
+	list-style: none;
+}
+/* burger menu for mobile view, note "add transition " */
+.burger div{
+
+	width: 25px;
+	height: 3px;
+	margin:5px;
+	background-color: black;
+	transition: all 0.5s ease;
+
+}
+
+.burger{
+
+	display:none;
+	cursor: pointer;
+}
+
+
+
+
+/* mobile view,needs some more work done*/
+@media (max-width: 1024px){
+	.nav-links{
+		width: 60%;
+	}
+	}
+
+
+
+@media (max-width: 768px){
+	
+	 body{
+		overflow-x: hidden;
+	}
+	
+	.nav-links{
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color:#00e6b8 ;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	
+	.nav-links li {
+		opacity: 0;
+	}
+	.burger{
+		display: block;
+	}
+	
+
+	.nav-active{
+		transform: translateX(0%);
+	}
+}
+
+@keyframes navLinkFade{
+	from{
+			opacity: 0;
+			transform: translateX(50px);
+		}
+	to{
+			opacity: 1;
+			transform: translateX(0px);
+		}
+
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+	
+
+	/*  hover Grow class add some effect later on*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
